@@ -2,14 +2,14 @@
   position: absolute;
   top: 58px;
   width: 300px;
-  transform: translateX(-50%);
   background-color: var(--bg);
   border: var(--border);
   padding: 1rem;
   overflow: hidden;
+  margin-right: -1rem;
 }
 .menu-item {
-  height: 40px;
+  height: 100%;
   display: flex;
   align-items: center;
   border-radius: var(--border-radius);
@@ -23,4 +23,45 @@
 
 .icon-right {
   margin-left: auto;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu-primary-enter {
+  position: absolute;
+  transform: translateX(-100%);
+}
+
+.menu-primary-enter-active {
+  transform: translateX(0);
+  transition: all var(--speed) ;
+}
+
+.menu-primary-exit {
+  position: absolute;
+}
+
+.menu-primary-exit-active {
+  transform: translateX(-100%);
+  transition: all var(--speed);
+}
+
+.menu-secondary-enter {
+  position: absolute;
+  transform: translateX(100%);
+}
+
+.menu-secondary-enter-active {
+  transform: translateX(0);
+  transition: all var(--speed);
+}
+
+.menu-secondary-exit {
+}
+
+.menu-secondary-exit-active {
+  transform: translateX(-100%);
+  transition: all var(--speed);
 }
