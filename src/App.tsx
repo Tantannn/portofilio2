@@ -1,7 +1,7 @@
 import logo from './logo.svg';
-import './App.css';
 import Navbar from './Component/Navbar/Navbar';
-import NavItem from './Component/NavItem/NavItem';
+import NavItem from './Component/Navbar/NavItem/NavItem';
+import DropdownMenu from './Component/Navbar/DropdownMenu/DropdownMenu';
 
 function App() {
   return (
@@ -10,6 +10,9 @@ function App() {
         <NavItem icon=':)'/>
         <NavItem icon=':)'/>
         <NavItem icon=':)'/>
+        <NavItem>
+          <DropdownMenu/>
+        </NavItem>
       </Navbar>
     </div>
   );

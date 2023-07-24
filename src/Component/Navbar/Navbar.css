@@ -6,23 +6,22 @@
     --border-radius: 5px;
     --speed: 500ms;
 }
-.navbar ul {
+#navbar ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.navbar a {
-    color: var(--text-color);
-    text-decoration: none;
+
+
+#navbar {
+    height: var(--nav-size);
+    background-color: var(--bg);
+    padding: 0 1rem;
+    border-bottom: var(--border);
 }
 
-.navbar {
-    height: var(--nav-size)
-
-}
-
-.navbar {
+.navbar-nav {
     max-width: 100%;
     height: 100%;
     display: flex;
