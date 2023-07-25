@@ -12,7 +12,7 @@ export default function Navbar() {
           setOpen(!open);
         }}
       >
-                <p>helloc</p>
+        <p>helloc</p>
       </div>
 
       <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
@@ -35,7 +35,7 @@ export default function Navbar() {
 }
 function DropdownItem(props: any) {
   return (
-    <li className="dropdownItem">
+    <li className="dropdown-item">
       <img src={props.img}></img>
       <a> {props.text} </a>
     </li>
