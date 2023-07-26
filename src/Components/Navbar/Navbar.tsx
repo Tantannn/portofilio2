@@ -34,7 +34,7 @@ export default function Navbar() {
               work on it!
             </p>
             <p>tango.11@yahoo.com</p>
-            <button className="btn">Contact Me</button>
+            <button className="btn custom-btn">Contact Me</button>
           </div>
         </div>
       </div>
