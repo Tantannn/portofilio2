@@ -16,19 +16,27 @@ export default function Navbar() {
       </div>
 
       <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
-        <h3>
-          hello
-          <br />
-          <span>Website Designer</span>
-        </h3>
-        <ul>
-          <DropdownItem text={"My Profile"} />
-          <DropdownItem text={"Edit Profile"} />
-          <DropdownItem text={"Inbox"} />
-          <DropdownItem text={"Settings"} />
-          <DropdownItem text={"Helps"} />
-          <DropdownItem text={"Logout"} />
-        </ul>
+        <div className="dropdown-content">
+          <ul>
+            <DropdownItem text={"My Profile"} />
+            <DropdownItem text={"Edit Profile"} />
+            <DropdownItem text={"Inbox"} />
+            <DropdownItem text={"Settings"} />
+            <DropdownItem text={"Helps"} />
+            <DropdownItem text={"Logout"} />
+          </ul>
+          <div>
+            <h3>
+              <span>Let’s find solutions together?</span>
+            </h3>
+            <p>
+              Use my contacts beloyou need to put a project on the move, let’s
+              work on it!
+            </p>
+            <p>tango.11@yahoo.com</p>
+            <button className="btn">Contact Me</button>
+          </div>
+        </div>
       </div>
     </div>
   );
