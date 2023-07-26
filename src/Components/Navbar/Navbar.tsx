@@ -33,7 +33,7 @@ export default function Navbar() {
               Use my contacts beloyou need to put a project on the move, let’s
               work on it!
             </p>
-            <p>tango.11@yahoo.com</p>
+            <p><a>tango.11@yahoo.com</a></p>
             <button className="btn custom-btn">Contact Me</button>
           </div>
         </div>
