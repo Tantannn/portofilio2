@@ -6,13 +6,16 @@ export default function Navbar() {
 
   return (
     <div className="menu-container">
+      <div className="logo">MT.</div>
       <div
-        className="menu-trigger"
+        className="menu-trigger nav-icon"
         onClick={() => {
           setOpen(!open);
         }}
       >
-        <p>helloc</p>
+        <div className={`bar1 ${open && "bar1-inactive"}`}></div>
+        <div className={`bar2 ${open && "bar2-inactive"}`}></div>
+        <div className={`bar3 ${open && "bar3-inactive"}`}></div>
       </div>
 
       <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
@@ -33,7 +36,9 @@ export default function Navbar() {
               Use my contacts beloyou need to put a project on the move, let’s
               work on it!
             </p>
-            <p><a>tango.11@yahoo.com</a></p>
+            <p>
+              <a>tango.11@yahoo.com</a>
+            </p>
             <button className="btn custom-btn">Contact Me</button>
           </div>
         </div>
