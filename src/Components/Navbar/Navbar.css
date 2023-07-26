@@ -5,6 +5,7 @@
   --secondary-text-color: #cecece;
   --border-radius: 8px;
   --speed: 500ms;
+  --letter-spacing: 1em;
 }
 .dropdown-menu {
   position: absolute;
@@ -45,19 +46,19 @@
 
 
 .menu-container {
-  border: 1px solid rgb(85, 75, 90) ;
+  display: flex;
+  justify-content:center;
 }
 
 .menu-trigger {
   cursor: pointer;
   border: 1px solid #cccccc;
-  width: 50px;
+  width: 69%;
   position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: 10px;
   border-radius: var(--border-radius);
   z-index: 100;
+  display: flex;
+  justify-content: space-between;
 }
 
 .dropdown-item {
@@ -169,11 +170,12 @@
   transform: translate(0, -11px) rotate(45deg);
 }
 
-.logo {
-  letter-spacing: 0.5 rem; 
+.logo p {
+  letter-spacing: 0.5rem !important; 
+  border: 1px solid #fff;
 }
 
-
-.logo:hover {
-  letter-spacing: 1 rem; 
+.logo p:hover {
+  letter-spacing: 1rem; 
+  transition: 0.4s;
 }
