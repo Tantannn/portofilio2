@@ -2,10 +2,39 @@ footer {
     height: 60vh;
     background-color: var(--primary-bg);
     color: #ccc;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+}
+
+.footer .highlight-red {
+    color: #C21E56;
+}
+
+.footer .highlight-yellow {
+    color: #9ACD32;
+}
+
+.footer p {
+    letter-spacing: 0.15rem;
+}
+.footer p:hover {
+    cursor: pointer;
+    letter-spacing: 1rem;
+    transition: 400ms ease;
+}
+
+.footer p:not(:hover) {
+    transition: 400ms ease;
+}
+
+.footer-content {
+    padding-left: 10%;
+    border: 1px solid #ccc;
 }
