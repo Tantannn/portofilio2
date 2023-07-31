@@ -35,7 +35,7 @@ export default function Navbar() {
               <span>Let’s find solutions together?</span>
             </h3>
             <p>
-              Use my contacts beloyou need to put a project on the move, let’s
+              Use my contacts below you need to put a project on the move, let’s
               work on it!
             </p>
             <p>
