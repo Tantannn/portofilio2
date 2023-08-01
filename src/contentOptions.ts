@@ -4,7 +4,7 @@ const projects = {
 const homeHero = {
   title: "What I've been up to.",
   subtitle: 'Fullstack Developer',
-  text: 'Hello',
+  text: 'Here is a selection of projects that I’ve worked on.',
   image: 'https://source.unsplash.com/random',
 }
 
