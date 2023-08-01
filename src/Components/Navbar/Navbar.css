@@ -90,7 +90,8 @@
 .menu-trigger {
   cursor: pointer;
   border: 1px solid #cccccc;
-  width: 69%;
+  width: 100%;
+  max-width: 60rem;
   position: fixed;
   border-radius: var(--border-radius);
   z-index: 100;
@@ -116,7 +117,8 @@
 }
 
 .dropdown-content {
-  width: 69%;
+  max-width: 60rem;
+  width: 100%;
   border: 1px solid black;
   display: grid;
   grid-template-columns: 1fr 1fr;

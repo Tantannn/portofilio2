@@ -26,7 +26,7 @@ export default function Footer() {
             You can <span className="highlight-yellow">find me</span>:
           </h1>
           <p>
-            <a>Github</a>
+            <a href='https://github.com/Tantannn'>Github</a>
           </p>
           <p>
             <a>LinkedIn</a>

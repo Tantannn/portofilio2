@@ -5,27 +5,27 @@ const projects = [ {
 }, {
   title: 'hello',
   subtitle: 'Fullstack Developer',
-  image: './e-commerce.png'
+  image: './movieapp.png'
 },
 {
   title: 'hello',
   subtitle: 'Fullstack Developer',
-  image: './e-commerce.png'
+  image: './guessnumber.png'
 },
 {
   title: 'hello',
   subtitle: 'Fullstack Developer',
-  image: './e-commerce.png'
+  image: './galaxy.png'
 },
 {
   title: 'hello',
   subtitle: 'Fullstack Developer',
-  image: './e-commerce.png'
+  image: './house.png'
 },
 {
   title: 'hello',
   subtitle: 'Fullstack Developer',
-  image: './e-commerce.png'
+  image: './mapapp.png'
 },
 ]
 const homeHero = {

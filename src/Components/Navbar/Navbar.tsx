@@ -1,13 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [show, handleshow] = useState(false);
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > window.innerHeight) {
+        handleshow(true);
+      } else handleshow(false);
+    });
+  }, []);
+  console.log(show)
   return (
     <div className="menu-container">
-      <div className='menu-trigger'>
-        <div className="logo"><p>MT.</p></div>
+      <div className="menu-trigger">
+        <div className="logo">
+          <p>MT.</p>
+        </div>
         <div
           className=" nav-icon"
           onClick={() => {
