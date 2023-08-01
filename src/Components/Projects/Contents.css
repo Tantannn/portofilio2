@@ -1,0 +1,19 @@
+.projects-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.projects-contents img{
+    height: 30%;
+}
+
+.projects-contents .code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.project-contents:hover .code {
+  color: #ff7f50;
+}

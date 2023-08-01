@@ -1,6 +1,33 @@
-const projects = {
-  title: 'hello'
-}
+const projects = [ {
+  title: 'hello',
+  subtitle: 'Fullstack Developer',
+  image: './e-commerce.png'
+}, {
+  title: 'hello',
+  subtitle: 'Fullstack Developer',
+  image: './e-commerce.png'
+},
+{
+  title: 'hello',
+  subtitle: 'Fullstack Developer',
+  image: './e-commerce.png'
+},
+{
+  title: 'hello',
+  subtitle: 'Fullstack Developer',
+  image: './e-commerce.png'
+},
+{
+  title: 'hello',
+  subtitle: 'Fullstack Developer',
+  image: './e-commerce.png'
+},
+{
+  title: 'hello',
+  subtitle: 'Fullstack Developer',
+  image: './e-commerce.png'
+},
+]
 const homeHero = {
   title: "What I've been up to.",
   subtitle: 'Fullstack Developer',
