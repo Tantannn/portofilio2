@@ -21,13 +21,15 @@ export default function Home() {
         <Button text="hello" />
         {/* <button className="btn custom-btn">Contact Me</button> */}
       </Hero>
-      {projects.map((project) => (
-        <Projects image={project.image}>
-          <h1>What I've been up to.</h1>
-          <p>Here is a selection of projects that I’ve worked on.</p>
+      {projects.map((project, i) => (
+        <Projects image={project.image} key={i}>
+          <h3>
+          <span className="code">&lt;</span>
+            What I've been up to.
+            <span className="code">&#47;&gt;</span>
+          </h3>
         </Projects>
-      ))
-      }
+      ))}
       <Project />
       <div className="home-container">Home</div>
     </>

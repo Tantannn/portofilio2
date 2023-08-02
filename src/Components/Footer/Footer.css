@@ -37,6 +37,8 @@ footer {
 }
 
 .footer-content {
-    padding-left: 10%;
     border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
 }
+

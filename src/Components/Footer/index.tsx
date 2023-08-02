@@ -15,25 +15,29 @@ export default function Footer() {
     <footer>
       <div className="footer">
         <div className="footer-content">
-          <h1 data-aos="fade-up">
-            Let's design something{" "}
-            <span className="highlight-red">together!</span>
-          </h1>
-          <button className="btn custom-btn">Contact Me</button>
+          <div>
+            <h1 data-aos="fade-up">
+              Let's design something 
+              <span className="highlight-red"> together!</span>
+            </h1>
+            <button className="btn custom-btn">Contact Me</button>
+          </div>
         </div>
         <div className="footer-content">
-          <h1 data-aos="fade-up">
-            You can <span className="highlight-yellow">find me</span>:
-          </h1>
-          <p>
-            <a href='https://github.com/Tantannn'>Github</a>
-          </p>
-          <p>
-            <a>LinkedIn</a>
-          </p>
-          <p>
-            <a>Email</a>
-          </p>
+          <div>
+            <h1 data-aos="fade-up">
+              You can <span className="highlight-yellow">find me</span>:
+            </h1>
+            <p>
+              <a href='https://github.com/Tantannn'>Github</a>
+            </p>
+            <p>
+              <a>LinkedIn</a>
+            </p>
+            <p>
+              <a>Email</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

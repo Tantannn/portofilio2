@@ -4,12 +4,14 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 5%;
+  cursor: pointer;
+  color:red;
 }
 .projects-contents img {
   max-width: 60rem;
   width: 100%;
   height: 30vh;
-object-fit: cover;
+  object-fit: cover;
 }
 
 .projects-contents .code {
@@ -17,6 +19,6 @@ object-fit: cover;
   transition: color 0.3s ease-out;
 }
 
-.project-contents:hover .code {
+.project-contents:hover {
   color: #ff7f50;
 }
