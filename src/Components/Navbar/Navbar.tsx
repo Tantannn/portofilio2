@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <div className="menu-container">
       <div className="menu-trigger">
-        <div className="logo">
+        <div className={ `${!show? 'logo' : 'logo-black' }` }>
           <p>MT.</p>
         </div>
         <div
@@ -25,9 +25,9 @@ export default function Navbar() {
             setOpen(!open);
           }}
         >
-          <div className={`bar1 ${open && "bar1-inactive"}`}></div>
-          <div className={`bar2 ${open && "bar2-inactive"}`}></div>
-          <div className={`bar3 ${open && "bar3-inactive"}`}></div>
+          <div className={`${!show? 'bar1' : 'bar1-black' } ${open && "bar1-inactive"}`}></div>
+          <div className={`${!show? 'bar2' : 'bar2-black' } ${open && "bar2-inactive"}`}></div>
+          <div className={`${!show? 'bar3' : 'bar3-black' } ${open && "bar3-inactive"}`}></div>
         </div>
       </div>
 
@@ -64,7 +64,6 @@ export default function Navbar() {
 function DropdownItem(props: any) {
   return (
     <li className="dropdown-item">
-      <img src={props.img} alt="Picture of the author"/>
       <a> {props.text} </a>
     </li>
   );
