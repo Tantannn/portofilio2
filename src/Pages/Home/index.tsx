@@ -1,9 +1,7 @@
-import React from "react";
 import Hero from "../../Components/Hero";
 import Project from "../../Components/Projects";
 import "./Home.css";
 import contentOptions from "../../contentOptions";
-import Button from "../../Components/Button";
 import Projects from "../../Components/Projects";
 
 export default function Home() {
@@ -18,20 +16,20 @@ export default function Home() {
           <span className="subtitle-highlight">{homeHero.subtitle}</span>
         </p>
         <p>{homeHero.text}</p>
-        <Button text="hello" />
-        {/* <button className="btn custom-btn">Contact Me</button> */}
+        <button className="btn2 custom-btn2">Contact Me</button>
       </Hero>
       {projects.map((project, i) => (
         <Projects image={project.image} key={i}>
           <h3>
-          <span className="code">&lt;</span>
-            What I've been up to.
+            <span className="code">&lt;</span>
+            {project.title}
             <span className="code">&#47;&gt;</span>
           </h3>
         </Projects>
       ))}
-      <Project />
-      <div className="home-container">Home</div>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <button className="btn custom-btn" >Show more</button>
+      </div>
     </>
   );
 }

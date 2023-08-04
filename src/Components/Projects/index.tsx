@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-export default function Projects(props: any) { 
+export default function Projects(props: any) {
   useEffect(() => {
     AOS.init({
       offset: 150, // offset (in px) from the original trigger point
@@ -15,9 +15,7 @@ export default function Projects(props: any) {
     <div className="projects-contents" data-aos="fade-up">
       <img src={props.image} alt="Picture of the author" className="h-full" />
       <div>
-        <span className="code">&lt;</span>
-        {props.children}
-        <span className="code">&#47;&gt;</span>
+        <p>{props.children}</p>
       </div>
     </div>
   );

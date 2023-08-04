@@ -20,7 +20,7 @@ export default function Footer() {
               Let's design something 
               <span className="highlight-red"> together!</span>
             </h1>
-            <button className="btn custom-btn">Contact Me</button>
+        <button className="btn2 custom-btn2">Contact Me</button>
           </div>
         </div>
         <div className="footer-content">

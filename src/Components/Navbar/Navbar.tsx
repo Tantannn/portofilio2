@@ -35,11 +35,10 @@ export default function Navbar() {
         <div className="dropdown-nav">
           <div className="dropdown-content">
             <ul>
-              <DropdownItem text={"My Profile"} />
-              <DropdownItem text={"Edit Profile"} />
-              <DropdownItem text={"Inbox"} />
-              <DropdownItem text={"Settings"} />
-              <DropdownItem text={"Helps"} />
+              <DropdownItem text={'Home Page'} />
+              <DropdownItem text={"About Me"} />
+              <DropdownItem text={"Projects"} />
+              <DropdownItem text={"Contact"} />
               <DropdownItem text={"Logout"} />
             </ul>
             <div>
