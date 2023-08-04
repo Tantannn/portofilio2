@@ -1,14 +1,11 @@
 import './MoreProjects.css';
-import Navbar from '../../Components/Navbar/Navbar';
-import Footer from '../../Components/Footer';
-
+import Hero from '../../Components/Hero';
 
 export default function MoreProjects() {
   return (
         <>
-            <Navbar/>
+            <Hero />
             <div>MoreProjects</div>
-            <Footer/>
         </>
   )
 }

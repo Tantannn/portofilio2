@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -12,11 +13,10 @@ export default function Navbar() {
       } else handleshow(false);
     });
   }, []);
-  console.log(show)
   return (
     <div className="menu-container">
       <div className="menu-trigger">
-        <div className={ `${!show? 'logo' : 'logo-black' }` }>
+        <div className={`${!show ? "logo" : "logo-black"}`}>
           <p>MT.</p>
         </div>
         <div
@@ -25,9 +25,21 @@ export default function Navbar() {
             setOpen(!open);
           }}
         >
-          <div className={`${!show? 'bar1' : 'bar1-black' } ${open && "bar1-inactive"}`}></div>
-          <div className={`${!show? 'bar2' : 'bar2-black' } ${open && "bar2-inactive"}`}></div>
-          <div className={`${!show? 'bar3' : 'bar3-black' } ${open && "bar3-inactive"}`}></div>
+          <div
+            className={`${!show ? "bar1" : "bar1-black"} ${
+              open && "bar1-inactive"
+            }`}
+          ></div>
+          <div
+            className={`${!show ? "bar2" : "bar2-black"} ${
+              open && "bar2-inactive"
+            }`}
+          ></div>
+          <div
+            className={`${!show ? "bar3" : "bar3-black"} ${
+              open && "bar3-inactive"
+            }`}
+          ></div>
         </div>
       </div>
 
@@ -35,10 +47,10 @@ export default function Navbar() {
         <div className="dropdown-nav">
           <div className="dropdown-content">
             <ul>
-              <DropdownItem text={'Home Page'} />
-              <DropdownItem text={"About Me"} />
-              <DropdownItem text={"Projects"} />
-              <DropdownItem text={"Contact"} />
+              <DropdownItem text={"Home Page"} link={""} />
+              <DropdownItem text={"About Me"} link={"about"} />
+              <DropdownItem text={"Projects"} link={"projects"} />
+              <DropdownItem text={"Contact"} link={"contact"} />
               <DropdownItem text={"Logout"} />
             </ul>
             <div>
@@ -46,8 +58,8 @@ export default function Navbar() {
                 <span>Let’s find solutions together?</span>
               </h3>
               <p>
-                Use my contacts below you need to put a project on the move, let’s
-                work on it!
+                Use my contacts below you need to put a project on the move,
+                let’s work on it!
               </p>
               <p>
                 <a>tango.11@yahoo.com</a>
@@ -61,8 +73,18 @@ export default function Navbar() {
   );
 }
 function DropdownItem(props: any) {
+  const navigate = useNavigate();
+
+  const path = window.location.pathname;
+    /* setThrough(window.location.pathname === "/" + props.link)
+console.log(through) */
   return (
-    <li className="dropdown-item">
+    <li
+      className={`dropdown-item ${path === "/" + props.link ? "through" : ""}`}
+      onClick={() => {
+        navigate(`${props.link}`);
+      }}
+    >
       <a> {props.text} </a>
     </li>
   );
