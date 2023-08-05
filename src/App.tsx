@@ -7,6 +7,7 @@ import './App.css';
 import Footer from './Components/Footer';
 import MoreProjects from './Pages/MoreProjects';
 
+
 function App() {
   return (
     <div className="App">
@@ -20,5 +21,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

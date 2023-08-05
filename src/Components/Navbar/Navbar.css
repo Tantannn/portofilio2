@@ -1,7 +1,7 @@
 :root {
   --primary-bg: #242526;
-  --secondary-bg: #9ACD32;
-  --primary-text-color: #28282B;
+  --secondary-bg: #9acd32;
+  --primary-text-color: #28282b;
   --secondary-text-color: #cecece;
   --border-radius: 8px;
   --speed: 500ms;
@@ -9,7 +9,7 @@
 }
 .dropdown-menu {
   position: fixed;
-  background-color: #9ACD32;
+  background-color: #9acd32;
   min-width: 100%;
   min-height: 100%;
   top: 0;
@@ -21,7 +21,6 @@
   align-items: center;
   z-index: 99;
 }
-
 
 ::selection {
   background: var(--primary-text-color);
@@ -161,7 +160,7 @@
   position: relative;
   display: inline-block;
   outline: none;
-  font-size:15px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -192,7 +191,7 @@
 .bar3-black {
   width: 35px;
   height: 5px;
-  background-color: #28282B;
+  background-color: #28282b;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -200,7 +199,7 @@
 .bar2-black {
   width: 25px;
   height: 5px;
-  background-color: #28282B;
+  background-color: #28282b;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -221,12 +220,12 @@
 
 .logo {
   letter-spacing: 0.5rem !important;
-  color: white
+  color: white;
 }
 
 .logo-black {
   letter-spacing: 0.5rem !important;
-  color: #28282B;
+  color: #28282b;
 }
 
 .logo p:hover {
@@ -249,9 +248,10 @@
   transition: 0.3s;
 }
 
-.through
- {
+.through {
   text-decoration: line-through !important;
+  letter-spacing: 0.1px !important;
 }
-
-
+.through:hover {
+  letter-spacing:0.1px;
+}

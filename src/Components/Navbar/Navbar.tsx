@@ -46,8 +46,8 @@ export default function Navbar() {
       <div className={`dropdown-menu ${open ? "active" : "inactive"}`}>
         <div className="dropdown-nav">
           <div className="dropdown-content">
-            <ul>
-              <DropdownItem text={"Home Page"} link={""} />
+            <ul onClick={()=> setOpen(false)}>
+              <DropdownItem text={"Home Page"} link={""}/>
               <DropdownItem text={"About Me"} link={"about"} />
               <DropdownItem text={"Projects"} link={"projects"} />
               <DropdownItem text={"Contact"} link={"contact"} />
@@ -74,15 +74,14 @@ export default function Navbar() {
 }
 function DropdownItem(props: any) {
   const navigate = useNavigate();
-
   const path = window.location.pathname;
-    /* setThrough(window.location.pathname === "/" + props.link)
-console.log(through) */
+
   return (
     <li
       className={`dropdown-item ${path === "/" + props.link ? "through" : ""}`}
       onClick={() => {
         navigate(`${props.link}`);
+        
       }}
     >
       <a> {props.text} </a>
