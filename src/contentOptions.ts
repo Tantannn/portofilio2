@@ -39,9 +39,9 @@ const homeHero = {
 };
 
 const aboutHero = {
-  title: "Fullstack Developer",
+  title: "A developer at heart.",
   subtitle: "About me",
-  text: "Hello",
+  text: "Hi, I’m  Minh Tan : full-stack web & app developer, amateur cook & fermentation hobbyist, gardener, tinkerer, and general curious person.",
   image: "https://source.unsplash.com/random",
 };
 
@@ -52,79 +52,18 @@ const workHero = {
   image: "https://source.unsplash.com/random",
 };
 
-const worktimeline = [
-  {
-    jobtitle: "Research Intern",
-    where: "TUBİTAK",
-    date: "2022"
-  },
-  {
-    jobtitle: "Teaching Asistant",
-    where: "TOBB ETU",
-    date: "2021"
-  },
-  {
-    jobtitle: "Engineering Apprentice",
-    where: "STM",
-    date: "2021"
-  }
-];
-
-const skills = [
-  {
-    name: "Programming",
-    value: 90
-  },
-  {
-    name: "Data Analytics",
-    value: 80
-  },
-  {
-    name: "Optimization",
-    value: 77
-  },
-  {
-    name: "Deep Learning",
-    value: 69
-  },
-  {
-    name: "Unreal Engine",
-    value: 40
-  }
-];
-
-const services = [
-  {
-    title: "Machine Learning Engineer",
-    description:
-      "Machine Learning Engineers are technically proficient programmers who research, build, and design self-running software to automate predictive models. "
-  },
-  {
-    title: "Data Scientist",
-    description:
-      "Data scientists examine which questions need answering and where to find the related data."
-  },
-  {
-    title: "AI in Financial Forecasting",
-    description:
-      "For AI in financial forecasting, if a machine can use non-traditional data (such as weather data or availability of stock) in addition to conventional financial data (like regional market information), then it can find new relations between metrics and get a more accurate picture of expected revenue and sales. "
-  }
-];
-
 const about = {
+  title:
+    " A full-stack developer knows no bounds. And when they find one they cross it without hesitation, boldly going into the unknown to return richer for it. ",
   aboutme:
-    "I am a 3rd year Artificial Intelligence Engineering student at TOBB University of Economics and Technology. At the same time, I am a Computer Engineering double major program student. My main fields of study and research are artificial intelligence tools and deep learning models used in finance. I love anything computer-related in general. In my spare time, I deal with cyber security, small applications."
+    "I can conjure a website or app from nothing into existence, fully formed. I specialize in manipulating the very fabric of the web, its raw materials of HTML, CSS, JavaScript, and SVG.",
 };
+
 const options = {
   projects,
   homeHero,
   aboutHero,
   workHero,
-  worktimeline,
-  skills,
-  services,
   about,
 };
 export default options;
-
-
