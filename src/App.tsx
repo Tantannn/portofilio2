@@ -7,7 +7,6 @@ import './App.css';
 import Footer from './Components/Footer';
 import MoreProjects from './Pages/MoreProjects';
 
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (

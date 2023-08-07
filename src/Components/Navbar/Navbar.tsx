@@ -13,6 +13,7 @@ export default function Navbar() {
       } else handleshow(false);
     });
   }, []);
+
   return (
     <div className="menu-container">
       <div className="menu-trigger">
@@ -51,7 +52,6 @@ export default function Navbar() {
               <DropdownItem text={"About Me"} link={"about"} />
               <DropdownItem text={"Projects"} link={"projects"} />
               <DropdownItem text={"Contact"} link={"contact"} />
-              <DropdownItem text={"Logout"} />
             </ul>
             <div>
               <h3>
@@ -72,19 +72,25 @@ export default function Navbar() {
     </div>
   );
 }
-function DropdownItem(props: any) {
+
+type DropdownProps = {
+  link: string;
+  text: string;
+}
+function DropdownItem(props: DropdownProps) {
   const navigate = useNavigate();
   const path = window.location.pathname;
+const {link,text} = props
 
   return (
     <li
       className={`dropdown-item ${path === "/" + props.link ? "through" : ""}`}
       onClick={() => {
-        navigate(`${props.link}`);
+        navigate(`${link}`);
         
       }}
     >
-      <a> {props.text} </a>
+      <a> {text} </a>
     </li>
   );
 }
