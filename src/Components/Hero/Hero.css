@@ -11,19 +11,15 @@
 
 .hero-content {
   display: grid;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr;
   max-width: 60rem;
   width: 100%;
   margin: 0 auto;
   height: 50%;
-  border: 1px solid #cccccc;
 }
-
-.hero-content-image {
-  height: 100%;
-}
-.hero-content img {
-  object-fit: contain;
+.hero-content-image img {
+  object-fit: cover;
   width: 100%;
   border: 1px solid #cccccc;
   box-sizing: border-box;

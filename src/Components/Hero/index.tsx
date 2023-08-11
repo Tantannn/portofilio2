@@ -7,7 +7,7 @@ export default function Hero(props: any) {
       <div className="hero-content">
         <p>{props.children}</p>
         <div className="hero-content-image">
-          {/* <img src={props.image} alt="Picture of the author" className="h-full" /> */}
+          <img src={props.image} alt="Picture of the author" className="h-full" />
         </div>
       </div>
     </div>

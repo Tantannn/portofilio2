@@ -41,8 +41,9 @@ const homeHero = {
 const aboutHero = {
   title: "A developer at heart.",
   subtitle: "About me",
-  text: "Hi, I’m  Minh Tan : full-stack web & app developer, amateur cook & fermentation hobbyist, gardener, tinkerer, and general curious person.",
-  image: "https://source.unsplash.com/random",
+  text: "Hi, I’m  Minh Tan : full-stack web & app developer, amateur cook & fermentation hobbyist, pianist, tinkerer, and general curious person.",
+  image:
+    "https://images.pexels.com/photos/17767956/pexels-photo-17767956/free-photo-of-snow-wood-dawn-landscape.jpeg",
 };
 
 const workHero = {
@@ -54,9 +55,11 @@ const workHero = {
 
 const about = {
   title:
-    " A full-stack developer knows no bounds. And when they find one they cross it without hesitation, boldly going into the unknown to return richer for it. ",
+    " A Full-stack developer knows no bounds. And when they find one they cross it without hesitation, boldly going into the unknown to return richer for it. ",
   aboutme:
     "I can conjure a website or app from nothing into existence, fully formed. I specialize in manipulating the very fabric of the web, its raw materials of HTML, CSS, JavaScript, and SVG.",
+  education:
+    "Passing on knowledge is one of the things I love most in this industry. I can help you get started on your Motion Graphics adventure or, if you already have the basics checked, find the best way to develop your animation skills.",
 };
 
 const options = {

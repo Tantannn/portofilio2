@@ -16,9 +16,11 @@ export default function About() {
         <button className="btn2 custom-btn2">Contact Me</button>
       </Hero>
       <div className="about">
-        <div className="about-container">
-          <p>{about.title}</p>
+        <div className="about-container ">
+          <p style={{ textAlign: 'center', width: '70%', marginTop: '2rem', marginBottom: '8rem' }} ><strong>{about.title}</strong></p>
           <p>{about.aboutme}</p>
+          <p className="highlight-red about-title">Education</p>
+          <p>{about.education}</p>
         </div>
       </div>
     </>

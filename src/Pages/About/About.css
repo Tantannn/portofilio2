@@ -10,5 +10,11 @@
 }
 .about-container  {
     /* color: var(--third-bg); */
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.about-title {
+  font-size: 1.5rem;
+  font-weight: 450;
+  
 }
