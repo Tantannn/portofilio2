@@ -256,3 +256,8 @@
 .through:hover {
   letter-spacing:0.1px;
 }
+
+.dropdown-email a:hover {
+  cursor: pointer;
+  letter-spacing: 5 rem
+}

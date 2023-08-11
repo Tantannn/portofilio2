@@ -62,7 +62,7 @@ export default function Navbar() {
                 let’s work on it!
               </p>
               <p>
-                <a>tango.11@yahoo.com</a>
+                <a className="dropdown-email">tango.11@yahoo.com</a>
               </p>
               <button className="btn custom-btn">Contact Me</button>
             </div>

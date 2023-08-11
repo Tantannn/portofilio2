@@ -35,7 +35,7 @@ const homeHero = {
   title: "What I've been up to.",
   subtitle: "Fullstack Developer",
   text: "Here is a selection of projects that I’ve worked on.",
-  image: "https://source.unsplash.com/random",
+  image: "https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
 };
 
 const aboutHero = {
@@ -53,6 +53,9 @@ const workHero = {
   image: "https://source.unsplash.com/random",
 };
 
+const projectsHero = {
+  image: 'https://images.pexels.com/photos/17646510/pexels-photo-17646510/free-photo-of-birds-flying-under-clear-sky-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+}
 const about = {
   title:
     " A Full-stack developer knows no bounds. And when they find one they cross it without hesitation, boldly going into the unknown to return richer for it. ",
@@ -68,5 +71,6 @@ const options = {
   aboutHero,
   workHero,
   about,
+  projectsHero
 };
 export default options;
