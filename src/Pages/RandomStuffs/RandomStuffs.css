@@ -1,0 +1,82 @@
+.about-container {
+  max-width: 60rem;
+  width: 100%;
+  border: 1px solid black;
+}
+.about {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+.about-container h2 {
+    color: var(--third-bg);
+}
+.about-content {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+}
+
+.hr-about hr {
+  border: 1px solid black;
+}
+
+.progress-section {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  background: #333;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+}
+.task-progress {
+  margin: 1.5rem 0;
+}
+
+.task-progress p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    width: 80%
+}
+
+.progress {
+  width: 80%;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 10px;
+  height: 10px;
+}
+
+.progress::-webkit-progress-bar {
+  background-color: gray;
+}
+
+.progress::-webkit-progress-bar,
+.progress::-webkit-progress-value {
+  border-radius: 10px;
+}
+
+.progress::-moz-progress-bar {
+  border-radius: 10px;
+}
+
+.progress1::-webkit-progress-value {
+  background: #56b6ff;
+}
+
+.about-quote {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  font-size: 1.3rem;
+}
+
+.volume-changer {
+    width: 200px;
+    margin: auto;
+}
+
+.volume-changer input[type="range"] {
+    width: 100%;
+}
