@@ -72,11 +72,12 @@
   font-size: 1.3rem;
 }
 
-.volume-changer {
+.phone-number-changer {
     width: 200px;
     margin: auto;
 }
 
-.volume-changer input[type="range"] {
-    width: 100%;
+
+.phone-number-changer-advance {
+    width: 700px !important;
 }
