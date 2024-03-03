@@ -1,7 +1,7 @@
 import "./RandomStuffs.css";
 import React, { useState } from "react";
 
-export default function RandomStuffs() {
+export default function PickYourPhoneNumber() {
     const [phoneNumber, setPhoneNumber] = useState<number>(0);
     const [enhance, setEnhance] = useState(false);
     const [advanceMode, setAdvanceMode] = useState(false);

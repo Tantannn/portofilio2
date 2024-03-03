@@ -1,12 +1,14 @@
 import './MoreProjects.css';
 import Hero from '../../Components/Hero';
-import RandomStuffs from '../RandomStuffs';
+import PickYourPhoneNumber from '../RandomStuffs/PickYourPhoneNumber';
+import PickYourBirthday from '../RandomStuffs/PickYourBirthday';
 
 export default function MoreProjects() {
   return (
         <>
             <Hero />
-            <RandomStuffs />
+            <PickYourPhoneNumber />
+            <PickYourBirthday />
             <div>MoreProjects</div>
         </>
   )
